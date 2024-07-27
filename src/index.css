@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     height: 65px;
+    width: 100%;
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
     color: white;
     padding: 15px 20px;
@@ -35,6 +36,7 @@ main{
   grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
   margin-bottom: 17px;
+  width: 100%;
 }
 
 .form--input{
@@ -94,4 +96,19 @@ main{
 
 .top {
   top: 0;
+}
+
+@media (width <= 500px){
+  .form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form--input, .form--button{
+    height: 48px;
+  }
+
+  .meme--text{
+    font-size: 1em;
+  }
 }
